@@ -1,0 +1,6 @@
+[submodule "src/dgprtl"]
+	path = src/dgprtl
+	url = git@github.com:fifteenhex/dgprtl.git
+[submodule "src/TG68K.C"]
+	path = src/TG68K.C
+	url = git@github.com:fifteenhex/TG68K.C.git
