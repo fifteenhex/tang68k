@@ -2,7 +2,7 @@ module bootrom
 (
     input clk,
     input logic [31:0] addr,
-    output logic [15:0] data,
+    output logic [15:0] data_out,
     input enable = 1,
     output logic berr
 );
@@ -29,7 +29,7 @@ module bootrom
     reg  [15:0] data_discard;
     
     pROM bram_prom_0 (
-        .DO({data_discard, data}),
+        .DO({data_discard, data_out}),
         .CLK(clk),
         .OCE('1),
         .CE(enable),
