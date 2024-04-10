@@ -2,7 +2,7 @@ include dgprtl/common.mk
 
 sdram_extra_srcs=dgprtl/mem/sdram_chip_intf.v
 
-all: chipselect.vcd sdram.vcd
+all: chipselect.vcd cpuaddr2xy.vcd sdram.vcd
 
 TG68K.C/tg68kdotc.v:
 	$(MAKE) -C TG68K.C/ tg68kdotc.v

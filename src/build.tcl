@@ -27,11 +27,15 @@ add_file chipselect.v
 add_file dgprtl/mem/bramwrapper_singleport_gowin.v
 add_file internalram.v
 add_file bootrom.v
+add_file configrom.v
 
 add_file sdram.v
 
 add_file dgprtl/mem/bramwrapper_dualport_gowin.v
+add_file dgprtl/gfx/framebuffer_xy2addr.v
 add_file dgprtl/gfx/framebuffer.v
+
+add_file cpuaddr2xy.v
 
 add_file top.v
 add_file tang68k.cst
