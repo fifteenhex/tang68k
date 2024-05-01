@@ -1,4 +1,4 @@
-bootrom.o: bootrom.s
+bootrom.o: bootrom.S
 	m68k-linux-gnu-gcc -o $@ -c $<
 
 bootrom.elf: bootrom.o bootrom.lds
